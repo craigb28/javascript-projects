@@ -6,6 +6,7 @@ let holdCabinet2 = ['orange drink', 'nerf toys', 'camera', 42, 'parsnip'];
 //1) Print the result of using concat on the two arrays. Does concat alter the original arrays? Verify this by printing holdCabinet1 after using the method.
 
 let concatenatedArray = []
+
 console.log(concatenatedArray.concat(holdCabinet1,holdCabinet2))
 
 console.log(holdCabinet1)  //Original arrays stay the same, even after concatenating.

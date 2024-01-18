@@ -4,7 +4,7 @@ let cargoHold = [1138, 'space suits', 'parrot', 'instruction manual', 'meal pack
 
 //1) Insert the string 'keys' at index 3 without replacing any other entries.
 
-cargoHold.splice(3,0,"keys")
+cargoHold.splice(0,0,"keys")
 
 console.log(cargoHold)
 
@@ -19,3 +19,7 @@ console.log(cargoHold)
 cargoHold.splice(2,3,"cat", "fob", "string cheese")
 
 console.log(cargoHold)
+
+practiceArray = [0,1,2,3,4,5,6,7,8,9]
+
+console.log(practiceArray.splice(2,3,3.5,3.7,3.8))
