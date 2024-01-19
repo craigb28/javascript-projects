@@ -29,9 +29,20 @@ let threeDimArr1 = ["hydrogen", "H", 1.008, ["water", "ammonia", "peroxide"]]
 let threeDimArr2 = ["helium", "He", 4.003, ["balloon", "blimp"]]
 let threeDimArr3 = ["iron", "Fe", 55.85, ["rust", "minerals", "steel"]]
 
-let threeDimTable = [threeDimArr1, threeDimArr2, threeDimArr3]
+let threeDimTable = [threeDimArr1, 
+                    threeDimArr2, 
+                    threeDimArr3]
+
 console.log(threeDimTable)
 
-console.log(threeDimTable[2]) // this prints the first level, the element array
+console.log("This should be iron:", threeDimTable[2])   // this prints the first level, the element array
 console.log(threeDimTable[1][3]) // this prints the second level, in this case the array of examples
 console.log(threeDimTable[2][3][2]) // this prints the third level, in this case one of the examples in the example array
+
+
+
+
+// More practice:
+
+console.log(`Table [1] : ${table[1]}`)
+

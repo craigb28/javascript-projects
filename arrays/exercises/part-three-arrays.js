@@ -4,7 +4,7 @@ let cargoHold = [1138, 'space suits', 'parrot', 'instruction manual', 'meal pack
 
 //1) Insert the string 'keys' at index 3 without replacing any other entries.
 
-cargoHold.splice(0,0,"keys")
+cargoHold.splice(0,0,"keys")  // This method modifies the original array, but RETURNS the DELETED elements.
 
 console.log(cargoHold)
 
