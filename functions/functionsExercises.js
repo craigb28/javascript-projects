@@ -1,12 +1,12 @@
 function makeLine(size) {
     let line = "";
     for (let i = 0; i < size; i++) {
-      line += 'X';
+      line += '#';
     }
     return line;
   }
   
-// console.log(makeLine(4))
+// console.log(makeLine(5))
 
 function makeSquare(size){
     let square = "";
@@ -79,14 +79,8 @@ function reverse(str) {
 
 
 function makeDiamond(height){
-    let diamond = "";
-    let upsideDownTriangle = "";
-    diamond = makeIsoscelesTriangle(height)+upsideDownTriangle;
-    upsideDownTriangle = reverse(diamond)
-    diamond = diamond+"\n"+upsideDownTriangle
-
-    return diamond
-
+    let topHalf = makeIsoscelesTriangle(height);
+    let diamond= topHalf+"\n"+reverse(topHalf);
+    return diamond;
 }
 console.log(makeDiamond(4))
-
