@@ -54,25 +54,39 @@ Initialize two variables to hold the string “LaunchCode” and the array [1, 5
 //   console.log(str[i])
 // }
 
+// for (let i = str.length; i>0; i--){
+//   console.log(str[i-1]);
+// }
+
+// for (let i = 1; i <= str.length; i++)    
+
 
 //Exercise #3:Construct a for loop that sorts the array [2, 3, 13, 18, -5, 38, -10, 11, 0, 104] into two new arrays:
   
-let arr = [2, 3, 13,18, -5, 38, -10, 11, 0, 104]
+// let arr = [2, 3, 13,18, -5, 38, -10, 11, 0, 104]
 
 //a. One array contains the even numbers, and the other holds the odds.
 
-let oddArr = []
-let evenArr = []
+// let odds = []
+// let evens = []
 
-for (let i = 0; i<arr.length; i++){
-  if (arr[i]%2==0){
-    evenArr.push(arr[i])
-  }
-  else{
-    oddArr.push(arr[i])
-  }
-}
-  //b. Print the arrays to confirm the results. */ 
+// for (let i = 0; i<arr.length; i++){
+//   if (arr[i]%2==0){
+//     evens.push(arr[i])
+//   }
+//   else{
+//     odds.push(arr[i])
+//   }
+// }
+//   //b. Print the arrays to confirm the results. */ 
 
-  console.log(evenArr)
-  console.log(oddArr)
+//   console.log(evens)
+//   console.log(odds)
+
+
+// Advance WAY - forEach:
+
+
+
+
+
