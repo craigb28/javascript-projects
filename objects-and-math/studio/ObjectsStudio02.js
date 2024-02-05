@@ -9,6 +9,11 @@
 
 // Code your oxygenExpended function here:
 
+function oxygenExpended(astronaut, orbRad, speed){
+  let duration = missionDuration(3, orbRad, speed);
+  let oxUsed = Math.round(astronaut.o2Used(duration)*1000)/1000;
+
+}
 
 // Candidate data & crew array.
 let candidateA = {

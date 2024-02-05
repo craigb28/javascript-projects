@@ -1,10 +1,17 @@
 // Code your selectRandomEntry function here:
 
+function selectRandomEntry(arr){
+  let randomEntry = arr[Math.floor(Math.random()*arr.length)];
+  return randomEntry;
+};
 
 // Code your buildCrewArray function here:
 
-
 let idNumbers = [291, 414, 503, 599, 796, 890];
+let selectedNumbers=[];
+
+
+
 
 // Here are the candidates and the 'animals' array:
 let candidateA = {
@@ -51,5 +58,32 @@ let candidateF = {
 };
 
 let animals = [candidateA,candidateB,candidateC,candidateD,candidateE,candidateF];
+
+
+function buildCrewArray(ids, candidates){
+  newCrew = []
+  for (i=o; i< ids.length; i++){
+    for (j=0; j<candidates.length; j++){
+      if (candidates[j].astronautID === id[i]){
+        newCrew.push(candidates[j]);
+      }
+    }
+    return newCrew
+  }
+  while (selectedNumbers.length<3){
+    let selectedIndividual = (selectRandomEntry(arrayOfNums));
+      if (selectedNumbers.includes(selectedIndividual) === false){
+      selectedNumbers.push(selectedIndividual);
+      }
+  };
+  // have an array of 3 random #s.  Match 3 #s with respective animals in candidate array.
+  for (let i=0; i<arrayOfNums.length; i++){
+    if(selectedNumbers.includes(animals[i].astronautID)){
+
+  }
+
+  // return selectedNumbers;
+};
+console.log(buildCrewArray());
 
 // Code your template literal and console.log statements:
