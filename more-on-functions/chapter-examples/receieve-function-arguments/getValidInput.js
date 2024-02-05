@@ -12,6 +12,8 @@ function getValidInput(prompt, isValid) {
     return userInput;
 }
 
+console.log(getValidInput(Number("give me an even number ")))
+
 // TODO 1: write a validator 
 // that ensures input starts with "a"
 
