@@ -1,8 +1,8 @@
 //Import modules:
 const input = require('readline-sync'); //Import readline-sync.
-const averages = require('./ScoreCalcs/averages.js');  //Import functions from averages.js.
-const printAll = require('./display.js') //Import function from display.js.
-const randomSelect = require('./randomSelect.js') //Import function from randomSelect.js.
+const averages = require('./ScoreCalcs/averages');  //Import functions from averages.js.
+const printAll = require('./display') //Import function from display.js.
+const randomSelect = require('./randomSelect') //Import function from randomSelect.js.
 
 //Candidate data:
 let astronauts = ['Fox','Turtle','Cat','Hippo','Dog'];
@@ -19,7 +19,7 @@ for (let i = 0; i<prompts.length; i++){
 
   if (response.toLowerCase()==='y'){
     if (i===0){
-      printAll(astronauts, testTitles, scores);//Call 'printAll' here and pass in all necessary arguments.
+      printAll.printAll(astronauts, testTitles, scores);//Call 'printAll' here and pass in all necessary arguments.
     } 
     else if (i===1){
       for (let j = 0; j<testTitles.length; j++){
